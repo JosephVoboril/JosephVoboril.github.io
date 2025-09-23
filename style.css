@@ -14,9 +14,12 @@ body {
 h1,
 h2,
 h3  {
-    color:var(--primary)
-
-}
+    color:var(--primary);
+    font-weight: 20px;
+    font-style: normal;
+    font-stretch: condensed;
+    font-size: x-large;
+} 
 
 p  {
     background:var(--accent)
