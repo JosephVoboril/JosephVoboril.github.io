@@ -23,6 +23,7 @@ h3  {
     border: 3px solid purple;
     border-radius: 9px;
     padding: 3px;
+    background:var(--accent)
      
 } 
 
