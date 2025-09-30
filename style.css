@@ -30,7 +30,7 @@ h3  {
 p  {
     background:var(--accent);
     text-decoration: underline black;
-    margin: -15px;
+    margin: 1px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
