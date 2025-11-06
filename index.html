@@ -38,5 +38,25 @@
             <h3><a href="Schedule_5.html">Schedule 5</a></h3>
             <h3><a href="https://kiwinguyen29.github.io/">Here is a Friend's Website</a></h3>
             
+            <p id="balloon">🎈</p>
+
+<script>
+ let balloonEl = document.getElementById("balloon");
+ let fontSize = 10;
+  function handleKeyDown(event) {
+    if (event.key == "ArrowUp") {
+      fontSize *= 1.1;
+      balloonEl.style.fontSize = fontSize + "px";
+      event.preventDefault();
+    }
+    if (event.key == "ArrowDown") {
+      fontSize /= 1.1;
+      balloonEl.style.fontSize = fontSize + "px";
+      event.preventDefault();
+    }
+  }
+  window.addEventListener("keydown" , handleKeyDown);
+</script>
+            <script></script>
 </body>
 </html>
