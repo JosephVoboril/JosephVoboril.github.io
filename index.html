@@ -110,8 +110,8 @@
         const greetingOutput = document.getElementById("greetingOutput");
 
         btnGreet.addEventListener("click", () => {
-            const name = nameInput.value;
-            const age = ageInput.value;
+            let name = nameInput.value;
+            let age = ageInput.value;
 
             if (age<13) {
               greetingOutput.textContent = "You're just a kid."
@@ -126,8 +126,8 @@
         const colorOutput = document.getElementById("colorOutput");
 
         function updateColorAndVolume(){
-          const color = colorInput.value;
-          const volume = volumeInput.value;
+          let color = colorInput.value;
+          let volume = volumeInput.value;
           colorOutput.style.backgroundColor = color;
           colorOutput.textContent = "color: " + color + " | volume: " + volume;
         }
