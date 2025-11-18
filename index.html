@@ -37,6 +37,7 @@
             <h3><a href="Schedule_4.html">Schedule 4</a></h3>
             <h3><a href="Schedule_5.html">Schedule 5</a></h3>
             <h3><a href="https://kiwinguyen29.github.io/">Here is a Friend's Website</a></h3>
+            <h3><a href="color.html">kiwinguyen29 Clicker</a></h3>
             
             <p id="balloon">🎈</p>
 
@@ -95,9 +96,9 @@
         <h2>Part 3: Checkbox and Radio Buttons</h2>
         <label><input type="checkbox" id="subscribeBox"> Subscribe to newsletter</label>
         <p>Pick a mode:</p>
-        <label><input type="radio" name="mode" value="Light"> Light</label>
-        <label><input type="radio" name="mode" value="Dark"> Dark</label>
-        <label><input type="radio" name="mode" value="System" checked> System</label>
+        <label><input type="radio" name="mode" id="lightMode" value="Light"> Light</label>
+        <label><input type="radio" name="mode" id="darkMode"  value="Dark"> Dark</label>
+        <label><input type="radio" name="mode" id ="systemMode" value="System" checked> System</label>
         <button id="btnSubmit">Submit</button>
         <div class="output" id="modeOutput"></div>
     </section>
@@ -139,13 +140,13 @@
         // --- PART 3 ---
         const subscribeBox = document.getElementById("subscribeBox");
         const btnSubmit = document.getElementById("btnSubmit");
-        const modeOutput = document.getElementById("modeOutput");
+        const modeOutput = document.getElementById("modeOutput")
 
         btnSubmit.addEventListener("click", () => {
-            const selectedMode = document.querySelector("input[name=mode]:checked").value;
-            const subscribed = subscribeBox.checked ? "Subscribed" : "Not Subscribed";
+            let selectedMode = document.querySelector("input[name=mode]:checked").value;
+            let subscribed = subscribeBox.checked ? "Subscribed" : "Not Subscribed";
 
-            modeOutput.textContent = "Mode: " + selectedMode + " | " + subscribed;
+            modeOutput.textContent = "Mode: " + selectedMode  + " | " + subscribed;
             // Challenge: Include whether the user subscribed or not.
         });
     </script>
