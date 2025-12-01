@@ -30,6 +30,7 @@ function increment() {
 //   clearInterval(intervalId);
 //   console.log("Interval stopped.");
 // }, 5000);
+
 function upgrade() {
     // setTimeout(() => {
     //     count = count * 1.03;
@@ -39,5 +40,7 @@ function upgrade() {
         count= count +1;
         countEl.textContent = count;
     }, 500);
+        count= count-1
+        countEl.textContent = count;
 }
 Sonbtn.addEventListener("click",)   
