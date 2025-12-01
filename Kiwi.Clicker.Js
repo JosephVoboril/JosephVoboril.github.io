@@ -36,7 +36,7 @@ function upgrade() {
     //     countEl.textContent = count;
     // }, 500);
     setInterval(() => {
-        count= count *1.03;
+        count= count +1;
         countEl.textContent = count;
     }, 500);
 }
