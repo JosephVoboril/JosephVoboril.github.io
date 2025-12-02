@@ -66,18 +66,17 @@ function upgrade2(event) {
 
 
 }
-Sonbtn.addEventListener("click", upgradeFinal)   
+Sonbtn.addEventListener("click", upgrade3)   
 
-    if (count >= 100000) {
-        count = count - 100000;
+    if (count >= 1) {
+        count = count - 1;
         countEl.textContent = count;
     }
     setInterval(() => {
-
         count = count *167000;
         //Kiwi's favorite number
         countEl.textContent = count;
     }, 1);
 
 
-Sonbtn.addEventListener("click", upgrade2)   
+Sonbtn.addEventListener("click", upgrade3)   
