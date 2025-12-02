@@ -31,16 +31,53 @@ function increment() {
 //   console.log("Interval stopped.");
 // }, 5000);
 
-function upgrade() {
+function upgrade(event) {
     // setTimeout(() => {
     //     count = count * 1.03;
     //     countEl.textContent = count;
     // }, 500);
+    if (count >= 10) {
+        count = count - 10;
+        countEl.textContent = count;
+    }
     setInterval(() => {
-        count= count +1;
+        count = count + 1;
         countEl.textContent = count;
-    }, 500);
-        count= count-1
-        countEl.textContent = count;
+    }, 1000);
+
+
 }
-Sonbtn.addEventListener("click",)   
+Sonbtn.addEventListener("click",upgrade);
+
+function upgrade2(event) {
+    // setTimeout(() => {
+    //     count = count * 1.03;
+    //     countEl.textContent = count;
+    // }, 500);
+    if (count >= 1000) {
+        count = count - 1000;
+        countEl.textContent = count;
+    }
+    setInterval(() => {
+
+        count = count + 1000;
+        countEl.textContent = count;
+    }, 10000);
+
+
+}
+Sonbtn.addEventListener("click", upgradeFinal)   
+
+    if (count >= 100000) {
+        count = count - 100000;
+        countEl.textContent = count;
+    }
+    setInterval(() => {
+
+        count = count *167000;
+        //Kiwi's favorite number
+        countEl.textContent = count;
+    }, 1);
+
+
+Sonbtn.addEventListener("click", upgrade2)   
