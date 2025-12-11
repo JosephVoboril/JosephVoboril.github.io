@@ -1,9 +1,9 @@
 html {
-    --text: #083531;
-    --background: #83dcff;
-    --primary: #443986;
+    --text: #343508;
+    --background: #f7e26d;
+    --primary: #b3a06d;
     --secondary: #3467a1;
-    --accent: #67a3fc;
+    --accent: #fff9c4;
     padding: 12px;
 
 }
@@ -20,7 +20,7 @@ h3  {
     font-style: normal;
     font-stretch: condensed;
     font-size: x-large;
-    border: 3px solid purple;
+    border: 3px solid rgb(204, 134, 30);
     border-radius: 9px;
     padding: 3px;
     background:var(--accent)
