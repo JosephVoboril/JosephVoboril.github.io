@@ -39,11 +39,13 @@ function upgrade(event) {
     if (count >= 10) {
         count = count - 10;
         countEl.textContent = count;
-    }
-    setInterval(() => {
+            setInterval(() => {
         count = count + 1;
         countEl.textContent = count;
     }, 1000);
+
+    }
+
 
 
 }
@@ -57,12 +59,12 @@ function upgrade2(event) {
     if (count >= 1000) {
         count = count - 1000;
         countEl.textContent = count;
-    }
-    setInterval(() => {
+            setInterval(() => {
 
         count = count + 1000;
         countEl.textContent = count;
     }, 10000);
+    }
 
 
 }
@@ -71,12 +73,12 @@ function upgrade3(event) {
     if (count >= 10000) {
         count = count - 10000;
         countEl.textContent = count;
-    }
-    setInterval(() => {
+            setInterval(() => {
 
         count = count * 167000;
         countEl.textContent = count;
     }, 1);
+    }
 
 
 }
