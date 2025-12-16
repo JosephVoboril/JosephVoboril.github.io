@@ -7,77 +7,42 @@ function increment() {
     count = count + 1;
     countEl.textContent = count;
 }
+Sonbtn.addEventListener("click", increment);
 
 
-//function upgrade() {
-//count = count * 1.03;
-//countEl.textContent = count;
-//}
-//Sonbtn.addEventListener("click", increment);
-
-
-// function upgrade() {
-//     count = count * 1.03;
-//     countEl.textContent = count;
-// }
-
-// Call displayTime every 1000 milliseconds (1 second)
-// const intervalId = setInterval(countEl, 1000);
-
-
-// // To stop the repetition after some time (e.g., 5 seconds)
-// setTimeout(() => {
-//   clearInterval(intervalId);
-//   console.log("Interval stopped.");
-// }, 5000);
-
-function upgrade(event) {
-    // setTimeout(() => {
-    //     count = count * 1.03;
-    //     countEl.textContent = count;
-    // }, 500);
+function upgrade() {
     if (count >= 10) {
         count = count - 10;
         countEl.textContent = count;
+        setInterval(() => {
+            count = count + 1;
+            countEl.textContent = count;
+        }, 1000);
     }
-    setInterval(() => {
-        count = count + 1;
-        countEl.textContent = count;
-    }, 1000);
-
-
 }
-Sonbtn.addEventListener("click",upgrade);
+//put interval or timeout in if(count>=100 or whatever number is)
+Sonbtn.addEventListener("click", upgrade);
 
-function upgrade2(event) {
-    // setTimeout(() => {
-    //     count = count * 1.03;
-    //     countEl.textContent = count;
-    // }, 500);
+function upgrade2() {
     if (count >= 1000) {
         count = count - 1000;
         countEl.textContent = count;
-    }
-    setInterval(() => {
+            setInterval(() => {
 
         count = count + 1000;
         countEl.textContent = count;
     }, 10000);
-
-
+  }
 }
-function upgrade3(event) {
-
-    if (count >= 100000) {
+function upgrade3() {
+  if (count >= 100000) {
         count = count - 100000;
         countEl.textContent = count;
-    }
-    setInterval(() => {
+            setInterval(() => {
 
         count = count * 167000;
         countEl.textContent = count;
     }, 1);
-
-
+  }
 }
 Sonbtn.addEventListener("click", upgrade3)   
