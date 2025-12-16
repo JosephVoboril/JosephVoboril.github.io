@@ -68,8 +68,8 @@ function upgrade2(event) {
 }
 function upgrade3(event) {
 
-    if (count >= 10000) {
-        count = count - 10000;
+    if (count >= 100000) {
+        count = count - 100000;
         countEl.textContent = count;
     }
     setInterval(() => {
